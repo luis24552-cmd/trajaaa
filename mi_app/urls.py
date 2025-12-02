@@ -1,9 +1,10 @@
 # mi_app/urls.py
-
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    # Esta es la URL vacía dentro de la aplicación
-    path('', views.inicio, name='inicio'), 
-]   
+    path('', views.inicio, name='inicio'),
+    path('actividades/', views.actividades, name='actividades'),
+    path('diagnostico/', views.diagnostico, name='diagnostico'),
+    path('galeria/', views.galeria, name='galeria'),
+]

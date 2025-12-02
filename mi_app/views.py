@@ -1,5 +1,15 @@
 from django.shortcuts import render
 
+from django.shortcuts import render
+
 def inicio(request):
-    # Asegúrate de que el nombre de la plantilla sea exacto
-    return render(request, 'mi_app/index.html')
+    return render(request, 'inicio.html')
+
+def actividades(request):
+    return render(request, 'actividades.html')
+
+def diagnostico(request):
+    return render(request, 'diagnostico.html')
+
+def galeria(request):
+    return render(request, 'galeria.html')
