@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividades PAEC</title>
+
+    <!-- Estilos mejorados -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial;
+            background:#eef1f5;
+            margin:0;
+        }
+
+        header {
+            background:#004aad;
+            color:white;
+            padding:25px;
+            text-align:center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        nav {
+            margin-top:10px;
+        }
+
+        nav a {
+            color:white;
+            margin:0 20px;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        nav a:hover {
+            text-decoration:underline;
+        }
+
+        h2 {
+            color:#004aad;
+        }
+
+        .contenedor {
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:25px 0;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity:0; }
+            to { opacity:1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity:0; }
+            to { transform: translateY(0); opacity:1; }
+        }
+
+        .bloque {
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 3px 12px rgba(0,0,0,0.1);
+            margin-top:25px;
+            animation: slideUp 0.8s ease;
+        }
+
+        /* Galería */
+        .galeria {
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            justify-content:center;
+        }
+
+        figure {
+            text-align:center;
+        }
+
+        .galeria img {
+            width:260px;
+            height:180px;
+            object-fit:cover;
+            border-radius:12px;
+            box-shadow:0 2px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.06);
+        }
+
+        /* Video */
+        .video-box iframe {
+            width:100%;
+            height:420px;
+            border-radius:12px;
+            box-shadow:0 2px 12px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background:#004aad;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-top:40px;
+        }
+
+        /* Colores útiles */
+        .rojo { color:#c60000; }
+        .azul { color:#004aad; }
+        .verde { color:#0f7d00; }
+        .morado { color:#7a0099; }
+        .grande { font-size:22px; }
+
+        @media (max-width: 600px) {
+            .galeria img {
+                width:90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Actividades del Proyecto PAEC</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="diagnostico.html">Diagnóstico</a>
+        <a href="galeria.html">Galería</a>
+    </nav>
+</header>
+
+<div class="contenedor">
+
+    <!-- SECCIÓN GALERÍA -->
+    <section class="bloque">
+        <h2>Galería de Actividades</h2>
+
+        <div class="galeria">
+            <figure>
+                <img src="progreso.jpg" alt="Actividad 1">
+                <figcaption><strong>Actividad 1:</strong> Planeación inicial</figcaption>
+            </figure>
+
+            <figure>
+                <img src="cambio1.jpg" alt="Actividad 2">
+                <figcaption><strong>Actividad 2:</strong> Trabajo colaborativo</figcaption>
+            </figure>
+
+            <figure>
+                <img src="avance.jpg" alt="Actividad 3">
+                <figcaption><strong>Actividad 3:</strong> Ejecución del proyecto</figcaption>
+            </figure>
+            
+        </div>
+    </section>
+
+    <!-- SECCIÓN VIDEO -->
+    
+
+    <!-- TEXTO DE ACTIVIDADES -->
+    <section class="bloque">
+        <h2>Documentación de Actividades</h2>
+
+        <p class="grande rojo"><strong>Descripción general del proceso y actividades realizadas durante el proyecto.</strong></p>
+
+        <h3 class="azul">Actividad 1: Planeación y Diagnóstico</h3>
+        <p>Realizamos un análisis del entorno, identificamos la problemática principal (acumulación de basura y abandono del área) y definimos un plan de acción. Se asignaron roles, se estableció un cronograma y se plantearon objetivos claros y medibles.</p>
+
+        <h3 class="verde">Actividad 2: Participación Comunitaria</h3>
+        <p>El equipo Imparables trabajó de manera coordinada, realizando dinámicas, propuestas y estrategias para recuperar el espacio. Se promovió la conciencia ambiental entre compañeros y se motivó la participación de la comunidad cercana.</p>
+
+        <h3 class="morado">Actividad 3: Ejecución del Proyecto</h3>
+        <p>Llevamos a cabo la limpieza del lugar, retiro de basura, deshierbe y mejoramiento del entorno. Aunque tuvimos un imprevisto legal que detuvo nuestra intervención, logramos completar la mayor parte de la actividad y documentar los avances.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 Proyecto PAEC</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto PAEC - Inicio</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial;
+            background:#eef1f5;
+            margin:0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            background:#004aad;
+            color:white;
+            padding:25px;
+            text-align:center;
+            animation: slideDown 1s ease;
+        }
+
+        nav {
+            margin-top:10px;
+            animation: fadeIn 1.3s ease;
+        }
+
+        nav a {
+            color:white;
+            margin:0 20px;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:18px;
+            transition: transform .3s, color .3s;
+        }
+
+        nav a:hover {
+            text-decoration:underline;
+            transform: scale(1.15);
+        }
+
+        .contenedor {
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:20px 0;
+            animation: slideUp 1s ease;
+        }
+
+        h2 {
+            color:#004aad;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .proceso, .avances {
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            margin-top:20px;
+            line-height:1.6;
+            animation: slideUp 1.2s ease;
+        }
+
+        .galeria {
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+            margin-top:20px;
+            animation: fadeIn 1.4s ease;
+        }
+
+        .galeria img {
+            width:32%;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            transition: transform .3s, box-shadow .3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.07);
+            box-shadow:0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        footer {
+            background:#004aad;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-top:30px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity:0; }
+            to { opacity:1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(40px); opacity:0; }
+            to { transform: translateY(0); opacity:1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-40px); opacity:0; }
+            to { transform: translateY(0); opacity:1; }
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .galeria img {
+                width:48%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .galeria img {
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Proyecto PAEC</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="diagnostico.html">Diagnóstico</a>
+        <a href="galeria.html">Galería</a>
+    </nav>
+</header>
+
+<div class="contenedor">
+
+    <section>
+        <h2>Bienvenido al Proyecto PAEC</h2>
+        <p>En esta página encontrarás la organización completa del proyecto, sus actividades, su propósito educativo y el impacto generado en la comunidad.</p>
+    </section>
+
+    <!-- PROCESO DEL PROYECTO -->
+    <section class="proceso">
+        <h2>Proceso del Proyecto PAEC</h2>
+        <p>El <strong>Proyecto PAEC</strong> tiene como propósito mejorar y recuperar espacios públicos dentro de la comunidad. En nuestro caso, identificamos un área que se encontraba descuidada, sucia y sin mantenimiento. Como equipo <strong>Imparables</strong>, nos organizamos para realizar la limpieza del sitio, recoger desechos, retirar maleza y dejar el espacio en mejores condiciones para los vecinos.</p>
+
+        <p>Durante el proceso aprendimos a trabajar en equipo, planificar actividades, distribuir tareas y comprender la importancia del cuidado del entorno. También observamos que, cuando una comunidad participa en la mejora de su propio ambiente, se genera un impacto positivo tanto visual como social.</p>
+
+        <p>Sin embargo, mientras realizábamos el proyecto surgió un inconveniente: fuimos retirados del lugar debido a que el terreno se encuentra en litigio o en un proceso legal que impide que cualquier persona realice actividades allí. A pesar de esta situación, nuestro equipo logró cumplir los objetivos principales, ya que conseguimos:</p>
+
+        <ul>
+            <li>Identificar una problemática real en la comunidad.</li>
+            <li>Organizar acciones para resolverla.</li>
+            <li>Participar activamente en la limpieza del espacio.</li>
+            <li>Generar conciencia sobre el valor de mantener áreas limpias y seguras.</li>
+            <li>Documentar nuestra experiencia y los aprendizajes obtenidos.</li>
+        </ul>
+
+        <p>Aunque no pudimos continuar debido al proceso legal del lugar, concluimos el proyecto con éxito, demostrando compromiso, iniciativa y responsabilidad ambiental. Como <strong>equipo Imparables</strong>, seguimos avanzando y dejando huella con cada acción que realizamos.</p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section>
+        <h2>Galería Fotográfica</h2>
+        <div class="galeria">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+    </section>
+
+    <!-- AVANCES -->
+    <section class="avances">
+        <h2>Avances del Proyecto</h2>
+        <ul>
+            <li>✔ Diagnóstico inicial completado</li>
+            <li>✔ Limpieza del área seleccionada</li>
+            <li>✔ Organización efectiva del equipo Imparables</li>
+            <li>✔ Documentación y registro del proceso</li>
+            <li>✔ Reflexión sobre la problemática comunitaria</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 Proyecto PAEC</p>
+</footer>
+
+</body>
+</html>
